@@ -1,0 +1,15 @@
+.DS_Store
+imagenet-vgg-verydeep-19.mat
+*.png
+*.jpg
+*.pkl
+*.pickle
+*.npy
+full_embeddings/*
+intermediate_PCA_models/*
+rough_brush/*
+flat/*
+.ipynb_checkpoints/*
+__pycache__/*
+Untitled.ipynb
+*.pth

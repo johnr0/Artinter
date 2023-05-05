@@ -1,0 +1,44 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/MemoryGame05",
+  "public": "../client/",
+  "ml_server": "http://localhost:5000/",
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "wCjppBMbOHXGq6yakYzrp23NgYk=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+    "oauth": {
+      "redirect": "https://localhost:3030/",
+      "auth0": {
+        "key": "<auth0 oauth key>",
+        "secret": "<auth0 oauth secret>",
+        "subdomain": "<auth0 subdomain>"
+      },
+      "google": {
+        "key": "991793402852-sv7eo0872q292tic1b9acebll386flrb.apps.googleusercontent.com",
+        "secret": "H1ZBS53VptX0WJvsd_iHJ1zu",
+        "scope": [
+          "openid"
+        ]
+      }
+    }
+  }
+}

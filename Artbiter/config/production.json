@@ -1,0 +1,13 @@
+{
+  "host": "0.0.0.0",
+  "port": 5050,
+  "mongodb": "mongodb+srv://jjyc:RJuMOKuygbyGLQmE@realmcluster.zklbs.mongodb.net/artinter?retryWrites=true&w=majority",
+  "public": "../dist/",
+  "ml_server": "http://ff65af5d9f02.ngrok.io/", 
+  "auth": {
+    "token": {
+      "secret": "FEATHERS_AUTH_SECRET"
+    },
+    "local": {}
+  }
+}

@@ -1,0 +1,35 @@
+<head>
+  <title>FeathersJS Webpack React Starter Kit</title>
+  <meta name='viewport' 
+     content='user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,minimal-ui,viewport-fit=cover' >
+  <!-- <meta http-equiv="Content-Security-Policy" content="img-src 'self' https://*; script-src 'self' kit.fontawesome.com"> -->
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1a706cfbb1.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+  
+</head>
+<body>
+  
+  <div id="root"></div>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyC0LLw70LeYiiW2mifKPfQSAaZQnVCLFmg",
+      authDomain: "artbiter-log.firebaseapp.com",
+      databaseURL: "https://artbiter-log-default-rtdb.firebaseio.com",
+      projectId: "artbiter-log",
+      storageBucket: "artbiter-log.appspot.com",
+      messagingSenderId: "252485731931",
+      appId: "1:252485731931:web:d06ab14cb379bed8b0e17e",
+      measurementId: "G-TZ2W88CJZN"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const analytics = firebase.analytics();
+  </script>
+  <script src="/static/bundle.js"></script>
+</body>
